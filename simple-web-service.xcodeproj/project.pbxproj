@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		42487C141D9BA85800990048 /* simple-web-service */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-web-service"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42487C171D9BA85800990048 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		42487C1E1D9BB52A00990048 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				42487C171D9BA85800990048 /* main.c */,
+				42487C1E1D9BB52A00990048 /* index.html */,
 			);
 			path = "simple-web-service";
 			sourceTree = "<group>";
