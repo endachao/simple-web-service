@@ -162,10 +162,10 @@ void catHTML(void * sock,char * filename){
     char header[] = "Server: A Simple Web Server\r\nContent-Type: text/html\r\n\r\n";
     
     // 发送响应报文
-    write(clent_sock, status, sizeof(status));
+    write(clent_sock, status, strlen(status));
     
     // 发送报文头
-    write(clent_sock, header, sizeof(header));
+    write(clent_sock, header, strlen(header));
     
     fp = fopen(filename, "r");
     
@@ -203,10 +203,10 @@ void catJPEG(void * sock,char * filename){
     char header[] = "Server: A Simple Web Server\r\nContent-Type: image/jpeg\r\n\r\n";
     
     // 发送响应报文
-    write(clent_sock, status, sizeof(status));
+    write(clent_sock, status, strlen(status));
     
     // 发送报文头
-    write(clent_sock, header, sizeof(header));
+    write(clent_sock, header, strlen(header));
 
     
     // 图片以二进制格式打开
@@ -232,7 +232,6 @@ void catJPEG(void * sock,char * filename){
     fclose(fp);
     close(clent_sock);
 }
-
 
 
 
